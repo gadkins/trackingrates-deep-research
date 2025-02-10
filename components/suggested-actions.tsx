@@ -17,15 +17,12 @@ interface SuggestedActionsProps {
 function PureSuggestedActions({ chatId, append }: SuggestedActionsProps) {
   const suggestedActions = [
     {
-      title: 'Research a topic',
-      label: 'deep dive with AI',
-      action:
-        'Perform deep research on this topic and provide a comprehensive analysis: ',
-    },
-    {
-      title: 'Compare and analyze',
-      label: 'multiple perspectives',
-      action: 'Research and analyze different viewpoints and evidence about: ',
+      title: 'Compile a report of bank executives',
+      label: 'Research and generate a report',
+      action: `Please compile a report of bank executives for the following bank. Return results in markdown table format:
+
+| First Name | Last Name | Title | Email | Phone |
+|-----|------------|-----------|--------|-------|`,
     },
   ];
 
