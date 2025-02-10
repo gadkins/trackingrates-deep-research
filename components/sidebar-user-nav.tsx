@@ -54,17 +54,6 @@ export function SidebarUserNav({ user }: { user: User }) {
                 type="button"
                 className="w-full cursor-pointer"
                 onClick={() => {
-                  window.open('https://firecrawl.dev', '_blank');
-                }}
-              >
-                Visit Firecrawl
-              </button>
-            </DropdownMenuItem>
-            <DropdownMenuItem asChild>
-              <button
-                type="button"
-                className="w-full cursor-pointer"
-                onClick={() => {
                   signOut({
                     redirectTo: '/',
                   });

@@ -6,6 +6,8 @@
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
+    --primary: 351 67.8% 52.5%;
+    --primary-foreground: 0 0% 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +15,8 @@
         --foreground-rgb: 255, 255, 255;
         --background-start-rgb: 0, 0, 0;
         --background-end-rgb: 0, 0, 0;
+        --primary: 351 67.8% 52.5%;
+        --primary-foreground: 0 0% 100%;
     }
 }
 
@@ -30,8 +34,6 @@
         --card-foreground: 240 10% 3.9%;
         --popover: 0 0% 100%;
         --popover-foreground: 240 10% 3.9%;
-        --primary: 20 100% 48%;
-        --primary-foreground: 0 0% 98%;
         --secondary: 240 4.8% 95.9%;
         --secondary-foreground: 240 5.9% 10%;
         --muted: 0 0% 100%;
@@ -57,7 +59,10 @@
         --sidebar-accent-foreground: 240 5.9% 10%;
         --sidebar-border: 220 13% 91%;
         --sidebar-ring: 217.2 91.2% 59.8%;
+        --primary: 220 100% 50%;
+        --primary-foreground: 0 0% 100%;
     }
+
     .dark {
         --background: 240 10% 3.9%;
         --foreground: 0 0% 98%;
@@ -65,8 +70,8 @@
         --card-foreground: 0 0% 98%;
         --popover: 240 10% 3.9%;
         --popover-foreground: 0 0% 98%;
-        --primary: 0 0% 98%;
-        --primary-foreground: 240 5.9% 10%;
+        --primary: 220 100% 50%;
+        --primary-foreground: 0 0% 100%;
         --secondary: 240 3.7% 15.9%;
         --secondary-foreground: 0 0% 98%;
         --muted: 240 3.7% 15.9%;
@@ -146,7 +151,7 @@
     @apply bg-background dark:bg-zinc-800 outline-none selection:bg-zinc-900 !important;
 }
 
-.ͼo.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground,
+.ͼo.cm-focused>.cm-scroller>.cm-selectionLayer .cm-selectionBackground,
 .ͼo.cm-selectionBackground,
 .ͼo.cm-content::selection {
     @apply bg-zinc-200 dark:bg-zinc-900 !important;

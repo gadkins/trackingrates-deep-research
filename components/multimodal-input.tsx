@@ -234,7 +234,7 @@ function PureMultimodalInput({
       <div className="flex flex-col gap-2">
         <DeepResearch
           isActive={true}
-          onToggle={() => {}}
+          onToggle={() => { }}
           isLoading={isLoading}
           activity={deepResearchState.activity}
           sources={deepResearchState.sources}
@@ -378,12 +378,10 @@ const SendButton = memo(PureSendButton, (prevProps, nextProps) => {
 function PureDeepResearchButton() {
   return (
     <Button
-      className="rounded-full px-3 py-1.5 h-fit flex items-center gap-2 bg-orange-50 hover:bg-orange-100 text-orange-600 border-0 disabled:opacity-100 disabled:cursor-not-allowed"
+      className="rounded-full px-3 py-1.5 h-fit flex items-center gap-2 border-0 disabled:opacity-100 disabled:cursor-not-allowed"
       variant="ghost"
       disabled
     >
-      <Telescope size={14} />
-      Using Deep Research
     </Button>
   );
 }

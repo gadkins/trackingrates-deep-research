@@ -733,12 +733,12 @@ export async function POST(request: Request) {
 
               const addActivity = (activity: {
                 type:
-                  | 'search'
-                  | 'extract'
-                  | 'analyze'
-                  | 'reasoning'
-                  | 'synthesis'
-                  | 'thought';
+                | 'search'
+                | 'extract'
+                | 'analyze'
+                | 'reasoning'
+                | 'synthesis'
+                | 'thought';
                 status: 'pending' | 'complete' | 'error';
                 message: string;
                 timestamp: string;
@@ -783,8 +783,8 @@ export async function POST(request: Request) {
                     prompt: `You are a research agent analyzing findings about: ${topic}
                             You have ${timeRemainingMinutes} minutes remaining to complete the research but you don't need to use all of it.
                             Current findings: ${findings
-                              .map((f) => `[From ${f.source}]: ${f.text}`)
-                              .join('\n')}
+                        .map((f) => `[From ${f.source}]: ${f.text}`)
+                        .join('\n')}
                             What has been learned? What gaps remain? What specific aspects should be investigated next if any?
                             If you need to search for more information, set nextSearchTopic.
                             If you need to search for more information in a specific URL, set urlToSearch.
@@ -983,11 +983,11 @@ export async function POST(request: Request) {
                   maxTokens: 16000,
                   prompt: `Create a comprehensive long analysis of ${topic} based on these findings:
                           ${researchState.findings
-                            .map((f) => `[From ${f.source}]: ${f.text}`)
-                            .join('\n')}
+                      .map((f) => `[From ${f.source}]: ${f.text}`)
+                      .join('\n')}
                           ${researchState.summaries
-                            .map((s) => `[Summary]: ${s}`)
-                            .join('\n')}
+                      .map((s) => `[Summary]: ${s}`)
+                      .join('\n')}
                           Provide key insights, conclusions, and any remaining uncertainties. Include citations to sources where appropriate. This analysis should be very comprehensive and full of details. It is expected to be long.`,
                 });
 

@@ -8,10 +8,10 @@ import { DeepResearchProvider } from '@/lib/deep-research-context';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://extract.chat'),
-  title: 'Extract Chat - by Firecrawl',
+  metadataBase: new URL('https://trackingrates.com'),
+  title: 'Competitive Rates by TrackingRates.com',
   description:
-    'Extract Chat allows you to extract information from any website with the help of an AI chatbot.',
+    'TrackingRates.com provides simple, clean, elegant reports that are easy to use in pricing your products.',
 };
 
 export const viewport = {
